@@ -1,1 +1,1 @@
-# API-IFriends
+ifriends-server

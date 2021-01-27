@@ -1,0 +1,28 @@
+{
+  "name": "ifriends-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leviosar/ifriends-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leviosar/ifriends-server/issues"
+  },
+  "homepage": "https://github.com/leviosar/ifriends-server#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "sqlite": "^4.0.19",
+    "sqlite3": "^5.0.1"
+  },
+  "type": "module"
+}
