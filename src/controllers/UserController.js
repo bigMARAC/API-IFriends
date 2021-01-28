@@ -38,4 +38,13 @@ export default class UserController {
         const users = await this.repository.all()
         res.send(users)
     }
+
+    async update(req, res) {
+        const user = await this.repository.getByToken(req.headers.token)
+        const id = user.matricula
+        const data = req.body
+
+        this.repository.update(id, data)
+        res.send({'message': 'user updated'})
+    }
 }

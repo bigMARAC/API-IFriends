@@ -39,6 +39,7 @@ authenticatedRouter.use(AuthMiddleware)
 
 authenticatedRouter.get('/me', (req, res) => controllers.user.me(req, res))
 authenticatedRouter.get('/nearby', (req, res) => controllers.user.nearby(req, res))
+authenticatedRouter.post('/update', (req, res) => controllers.user.update(req, res))
 
 authenticatedRouter.post('/subject', (req, res) => controllers.subject.store(req, res))
 authenticatedRouter.get('/subject/all', (req, res) => controllers.subject.all(req, res))
